@@ -1,18 +1,23 @@
 package com.crm.amdocs;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Customer {
 	
 	@Test
 	public void createCustomer() {
-		
-		System.out.println("Customer created");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.google.com");
+		driver.close();
 		
 	}
 	
 	@Test
 	public void delteCustomer() {
-		System.out.println("Delete Customer");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.google.com");
+		driver.close();
 	}
 }
